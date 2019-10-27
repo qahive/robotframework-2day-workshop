@@ -24,8 +24,5 @@ Demo Dictionary
     
 Demo set keywords
     ${hi} =     Set Variable     Hello, world!   
-    ${hi2} =     Set Variable     I said: ${hi}   
-    ${var1}     ${var2} =     Set Variable     Hello world 
-    ${list with some items}    Set Variable    test
-    @{list} =     Set Variable     ${list with some items}   
+    ${hi2} =     Set Variable     I said: ${hi}    
 
