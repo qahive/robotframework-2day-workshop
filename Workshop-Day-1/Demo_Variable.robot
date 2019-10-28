@@ -17,6 +17,7 @@ Demo List
     Log    ${product names[1]}
 
 Demo Dictionary
+    [Tags]    SmokeTest
     &{user1}    Create Dictionary    username=john    password=welcome1
     &{user2}    Create Dictionary    username=mary    password=welcome2
     Log    ${user1.username}
@@ -24,5 +25,8 @@ Demo Dictionary
     
 Demo set keywords
     ${hi} =     Set Variable     Hello, world!   
-    ${hi2} =     Set Variable     I said: ${hi}    
+    ${hi2} =     Set Variable     I said: ${hi}   
+    ${var1}     ${var2} =     Set Variable     Hello world 
+    ${list with some items}    Set Variable    test
+    @{list} =     Set Variable     ${list with some items}   
 
